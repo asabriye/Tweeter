@@ -37,11 +37,13 @@ outline: none;
 .tweet-bottom {
 display: flex;
 justify-content: space-between;
+margin-bottom: 20px;
 }
-/* 
+
 .counter, .input-box {
   color: rgb(70, 68, 68);
-} */
+}
+
 .bottomline {
   display: flex;
   font-family: 'Bungee';

@@ -24,8 +24,9 @@ body {
 
 .container{
 width: 90%;
-}
-
+margin: auto;
+font-family: "Source Sans Pro", sans-serif;
+} 
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

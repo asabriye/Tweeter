@@ -33,20 +33,22 @@
         <i id="arrow" class="btn__icon fas fa-angle-double-down"></i> </div>
       </div>
     </nav>
+    <div id="responsiveDesign">
     <header id=heading>
       <div class="image">
           <img src="/images/profile-hex.png"> 
       </div>
       <br>
-      <div class= "name">
-          <h2>Your Name</h2>
+      <div>
+          <h2 id="name"> Abdullahi Sabriye</h2>
       </div>
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form action="/tweets" method="POST"></formaction>
+        <div id="errorMessage"></div>
+        <form id="submit-tweet" action="/tweets" method="POST">
           <!-- <div class="input-box"> -->
           <!-- <label for="tweet-text">What are you humming about?</label> -->
         <!-- </div> -->
@@ -61,24 +63,6 @@
         </form>
       </section>   
       <section id = "tweets-container">
-        <article class="tweet">
-          <header>
-            <div>
-              <span class="avatar"></span>
-              <span class="name">Abdullahi Sabriye</span>
-            </div>
-            <span class="handle">@munchingwithsab</span>
-          </header>
-          <p class="tweetInfo"> Follow my food blog!</p>
-          <footer class= "bottom-icons">
-            <span class="date">10 days ago</span>
-            <span class ="icons">
-              <i id="heart" class="fas fa-heart"></i>
-              <i id="retweet" class="fas fa-retweet"></i>
-              <i id="flag" class="fas fa-flag"></i>
-          </span>
-          </footer>
-        </article>
       </section>   
     </main>
   </body>

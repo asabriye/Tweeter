@@ -6,7 +6,7 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!["Desktop Version"](https://github.com/asabriye/tweeter/blob/master/public/images/DesktopVersion.png)
+!["Desktop Version"](https://github.com/asabriye/tweeter/blob/master/public/images/Desktopversion.png)
 !["Mobile Version"](https://github.com/asabriye/tweeter/blob/master/public/images/MobileVersion.png)
 
 ## Getting Started

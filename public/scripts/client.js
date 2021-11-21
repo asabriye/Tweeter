@@ -5,19 +5,19 @@
 */
 
 
-$(document).ready(function () {
+$(document).ready(function() {
   const loadTweets = function() {
-    $.ajax({ 
+    $.ajax({
       method: 'GET',
       url: '/tweets',
       
     }).then((response) => {
-      console.log("RESPONSE: ")
+      console.log("RESPONSE: ");
       console.log(response);
       renderTweets(response);
       // $('#tweet-text').val("");
-      $(".counter").text(140)
-    })
+      $(".counter").text(140);
+    });
   };
   loadTweets();
   $('#errorMessage').hide();
@@ -30,7 +30,7 @@ $(document).ready(function () {
     for (let tweet of tweets) {
       $('#tweets-container').prepend(createTweetElement(tweet));
     }
-  }
+  };
 
   const escape =  function(str) {
     let div = document.createElement('div');
@@ -60,20 +60,20 @@ $(document).ready(function () {
     <span id="flag" class="fas fa-flag"></span>
     </footer>
     </article>
-    `
-  }
+    `;
+  };
   
   
   
   const $newTweet = $('#submit-tweet');
-  $newTweet.on('submit', function (event) {
+  $newTweet.on('submit', function(event) {
     event.preventDefault();
     const tweet = $("#tweet-text").val().trim().length;
-  if (!tweet) {
-    $('#errorMessage').text("Tweet cannot be empty!")
-    $('#errorMessage').slideDown("slow");
-    $('#errorMessage').delay(5000).slideUp("slow");
-   return;
+    if (!tweet) {
+      $('#errorMessage').text("Tweet cannot be empty!");
+      $('#errorMessage').slideDown("slow");
+      $('#errorMessage').delay(5000).slideUp("slow");
+      return;
     }
 
     if (tweet > 140) {
@@ -81,20 +81,20 @@ $(document).ready(function () {
       $('#errorMessage').slideDown("slow");
       $('#errorMessage').delay(5000).slideUp("slow");
       return;
-     } else {
-      const val = $( this).serialize();
+    } else {
+      const val = $(this).serialize();
       $.ajax("/tweets", {
         method: "POST",
         data: val,
       })
-      .then(() => {
-        $('#errorMessage').hide();
-       loadTweets();
-        $("#tweet-text").val("");
+        .then(() => {
+          $('#errorMessage').hide();
+          loadTweets();
+          $("#tweet-text").val("");
        
-      });
+        });
 
-     }   
+    }
   });
   
   

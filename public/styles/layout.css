@@ -6,13 +6,10 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
-/*
- * Global layout stuff
- */
 
 body {
   color: #545149;
@@ -34,7 +31,6 @@ font-family: "Source Sans Pro", sans-serif;
  .main{
   display: flex;
   flex-direction: column;
-  /* justify-content: space-evenly; */
   align-content: space-around;
   width: 100%;
 }
@@ -49,7 +45,6 @@ font-family: "Source Sans Pro", sans-serif;
 @media only screen and (min-width: 1024px) {
 #responsiveDesign {
   display: flex;
-  /* justify-content: center; */
   margin-top: 2em;
   justify-content: space-between;
   align-content: stretch;
@@ -68,7 +63,6 @@ font-family: "Source Sans Pro", sans-serif;
   margin-left: 2em;
   flex-grow: 1;
   flex-basis: auto;
-
 }
 
 
@@ -91,15 +85,5 @@ font-family: "Source Sans Pro", sans-serif;
   margin: 2em; 
   padding-right: 1em;
 }
-/* 
-.main{
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-}
-
-.tweet {
-  width: 500px;
-} */
 
 }

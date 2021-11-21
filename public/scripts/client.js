@@ -38,23 +38,6 @@ $(document).ready(function () {
     return div.innerHTML;
   };
   
-  // const validateTweet = function() {
-  //   const length = $('#tweet-text').val().length;
-  //   console.log("length: " + length);
-  //   let error = $('.invalid-text').slideUp()
-  //   if (length === 0) {
-  //     error.text('You have not written anything!').slideDown();
-  //     return false;
-  //   } else if (length > 140) {
-  //     error.text('Too long!').slideDown();
-  //     return false;
-  //   }
-  //   error.slideUp();
-  //   return true;
-    
-  // }
-  
-  
   
   const createTweetElement = function(tweet) {
     let date = new Date(tweet.created_at).toLocaleDateString();
@@ -83,7 +66,6 @@ $(document).ready(function () {
   
   
   const $newTweet = $('#submit-tweet');
-  // loadTweets();
   $newTweet.on('submit', function (event) {
     event.preventDefault();
     const tweet = $("#tweet-text").val().trim().length;
@@ -109,14 +91,13 @@ $(document).ready(function () {
         $('#errorMessage').hide();
        loadTweets();
         $("#tweet-text").val("");
-        //code here to emppty text area for every valid tweet
+       
       });
 
      }   
   });
   
   
-  
-  // loadTweets();
+
 
 });

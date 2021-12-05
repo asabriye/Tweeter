@@ -42,7 +42,7 @@ margin-bottom: 20px;
 }
 
 .counter, .input-box {
-  color: rgb(70, 68, 68);
+  /* color: rgb(70, 68, 68); */
   font-family: "Bungee";
 }
 
